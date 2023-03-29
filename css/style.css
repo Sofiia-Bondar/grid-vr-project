@@ -224,6 +224,7 @@ body{
   justify-content: end;
   align-items: flex-start;
   padding: 9px 10px;
+  margin-top: 20px;
 }
 .video-btn{
   margin-left: 22px;
@@ -485,7 +486,7 @@ grid-row: 1/-1;
 }
 
 .form-input::placeholder{
-  font-family: 'Helvetica';
+  font-family: 'Helvetica', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -537,11 +538,21 @@ grid-row: 1/-1;
   .subtitle{
     font-size: 24px;
   }
+  .tabs-content{
+    min-height: 700px;
+  }
   .tabs-content-item{
     display: block;
   }
+  .video{
+    width: auto;
+    height: 250px;
+  }
 }
 @media (max-width: 568px){
+  .features{
+    padding: 0;
+  }
   .buy-btn{
     flex-direction: column;
     margin: 0 auto;
@@ -551,6 +562,9 @@ grid-row: 1/-1;
   }
   .features-titles{
     display: block;
+  }
+  .tabs-content{
+    min-height: 700px;
   }
   .tabs-content-item{
     display: block;
@@ -568,5 +582,8 @@ grid-row: 1/-1;
   }
   .subtitle{
     font-size: 20px;
+  }
+  .tabs-btn{
+    column-count: 1;
   }
 }
